@@ -5,9 +5,9 @@ import { GenericEntity } from 'node-common/dist/entities/generic';
 
 import { TemplateConfigEntity } from './templateConfig.entity';
 import { TemplateContentConfigInterface } from 'doc-generator/lib/interfaces/entities';
-import { MX_MODULE } from '../../../../types/module.type';
+import { BCARD_MODULE } from '../../../../types/module.type';
 
-@Entity({ name: 'template_content', schema: MX_MODULE.DOCS })
+@Entity({ name: 'template_content', schema: BCARD_MODULE.DOCS })
 export class TemplateContentEntity extends GenericEntity {
     @Column({})
     name: string;

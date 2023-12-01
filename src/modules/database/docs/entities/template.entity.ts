@@ -2,9 +2,9 @@ import { Column, Entity, ObjectLiteral, OneToMany, PrimaryColumn } from 'typeorm
 import { set } from 'node-common/dist/utils/entities';
 
 import { TemplateConfigEntity } from './templateConfig.entity';
-import { MX_MODULE } from '../../../../types/module.type';
+import { BCARD_MODULE } from '../../../../types/module.type';
 
-@Entity({ name: 'template', schema: MX_MODULE.DOCS })
+@Entity({ name: 'template', schema: BCARD_MODULE.DOCS })
 export class TemplateEntity {
     @PrimaryColumn({ name: 'uid' })
     uid: string;

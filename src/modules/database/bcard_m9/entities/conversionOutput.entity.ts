@@ -3,9 +3,9 @@ import { GenericEntity } from 'node-common/dist/entities/generic';
 import { set } from 'node-common/dist/utils/entities';
 
 import { ConversionInputEntity } from './conversionInput.entity';
-import { MX_MODULE } from '../../../../types/module.type';
+import { BCARD_MODULE } from '../../../../types/module.type';
 
-@Entity({ name: 'conversion_output', schema: MX_MODULE.BCARD_M9 })
+@Entity({ name: 'conversion_output', schema: BCARD_MODULE.BCARD_M9 })
 export class ConversionOutputEntity extends GenericEntity {
     @Column({ name: 'conversion_input_id' })
     conversionInputId: number;
