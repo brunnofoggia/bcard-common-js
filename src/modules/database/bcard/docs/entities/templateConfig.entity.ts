@@ -5,7 +5,7 @@ import { GenericEntity } from 'node-common/dist/entities/generic';
 
 import { TemplateEntity } from './template.entity';
 import { TemplateContentEntity } from './templateContent.entity';
-import { BCARD_MODULE } from '../../../../types/module.type';
+import { BCARD_MODULE } from '../../../../../types/module.type';
 
 @Entity({ name: 'template_config', schema: BCARD_MODULE.DOCS })
 export class TemplateConfigEntity extends GenericEntity {
