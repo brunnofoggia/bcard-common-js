@@ -1,10 +1,10 @@
 import { Column, Entity, JoinColumn, ManyToOne, ObjectLiteral, OneToMany } from 'typeorm';
 
-import { set } from 'node-common/dist/utils/entities';
-import { GenericEntity } from 'node-common/dist/entities/generic';
+import { set } from 'node-labs/lib/utils/entities';
+import { GenericEntity } from 'node-labs/lib/entities/generic';
 
 import { TemplateConfigEntity } from './templateConfig.entity';
-import { TemplateContentConfigInterface } from 'doc-generator/lib/interfaces/entities';
+import { TemplateContentConfigInterface } from 'docs-handler/lib/interfaces/entities';
 import { BCARD_MODULE } from '../../../../../types/module.type';
 
 @Entity({ name: 'template_content', schema: BCARD_MODULE.DOCS })

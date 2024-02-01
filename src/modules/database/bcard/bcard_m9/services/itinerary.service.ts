@@ -1,5 +1,5 @@
 import { IsNull } from 'typeorm';
-import { DynamicDatabase } from 'node-common/dist/services/dynamicDatabase.service';
+import { DynamicDatabase } from 'node-labs/lib/services/dynamicDatabase.service';
 
 import { ItineraryEntity } from '../entities/itinerary.entity';
 

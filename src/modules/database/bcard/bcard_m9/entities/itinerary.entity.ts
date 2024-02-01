@@ -1,5 +1,5 @@
 import { Column, Entity, OneToMany } from 'typeorm';
-import { GenericEntity } from 'node-common/dist/entities/generic';
+import { GenericEntity } from 'node-labs/lib/entities/generic';
 
 import { ConversionInputEntity } from './conversionInput.entity';
 import { BCARD_MODULE } from '../../../../../types/module.type';
