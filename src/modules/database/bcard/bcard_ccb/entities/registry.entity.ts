@@ -5,7 +5,7 @@ import { GenericEntity } from '../../../../../entities/generic';
 import { set } from 'node-labs/lib/utils/entities';
 
 @Entity({ name: 'registry', schema: BCARD_MODULE.BCARD_CCB })
-@Index('_ccb_registry_project_uid_ccb_number_input', ['projectUid', 'ccbNumberInput'], { unique: true })
+@Index('_ccb_registry_project_uid_ccb_number', ['projectUid', 'ccbNumber'], { unique: true })
 @Index('_ccb_registry_transaction_uid', ['transactionUid'])
 export class RegistryEntity extends GenericEntity {
     @Column(
@@ -23,15 +23,18 @@ export class RegistryEntity extends GenericEntity {
     @Column({ name: 'transaction_uid' })
     transactionUid: string;
 
-    @Column({ name: 'ccb_number_input' })
-    ccbNumberInput: string;
+    @Column({ name: 'ccb_number' })
+    ccbNumber: string;
 
-    @Column({ name: 'ccb_number_ouput' })
-    ccbNumberOutput: string;
+    @Column({ name: 'ccb_if_number' })
+    ccbIfNumber: string;
+
+    @Column({ name: 'ccb_ipoc_number' })
+    ccbIpocNumber: string;
 
     @Column({ name: 'registry_uid' })
     registryUid: string;
 
-    @Column({ name: 'registry_data', type: 'text' })
+    @Column({ name: 'registry_data', type: 'text', default: null })
     registryData: string;
 }
