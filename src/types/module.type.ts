@@ -6,6 +6,7 @@ export enum BCARD_MODULE {
     BCARD_M9 = 'bcard_m9',
     BCARD_CCB = 'bcard_ccb',
     BCARD_PORTAL = 'bcard_portal',
+    BCARD_TMP = 'bcard_tmp',
 }
 
 export const BCARD_DYNAMIC = 'dynamic_bcard';
