@@ -10,3 +10,4 @@ export enum BCARD_MODULE {
 }
 
 export const BCARD_DYNAMIC = 'dynamic_bcard';
+export const BCARD_TMP_FOLDER = 'dynamic_tmp';
