@@ -1,4 +1,4 @@
-export enum BCARD_MODULE {
+export enum BCARD_PRODUCT {
     DOCS = 'docs',
     BCARD_M1 = 'bcard_m1',
     M3_LEGACY = 'm3',
@@ -8,6 +8,8 @@ export enum BCARD_MODULE {
     BCARD_PORTAL = 'bcard_portal',
     BCARD_TMP = 'bcard_tmp',
 }
+
+export const BCARD_MODULE = BCARD_PRODUCT;
 
 export const BCARD_DYNAMIC = 'dynamic_bcard';
 export const BCARD_TMP_FOLDER = 'dynamic_tmp';
