@@ -1,6 +1,6 @@
 {
     "name": "bcard-common",
-    "version": "1.6.3-alpha.1",
+    "version": "1.6.4-alpha.1",
     "description": "",
     "license": "ISC",
     "author": "Bruno Foggia",
@@ -62,7 +62,6 @@
         "rimraf": "^5.0.5",
         "rxjs": "^7.8.1",
         "source-map-support": "^0.5.21",
-        "sqlite3": "^5.1.7",
         "supertest": "^6.3.4",
         "ts-jest": "^29.1.2",
         "ts-loader": "^9.5.1",
